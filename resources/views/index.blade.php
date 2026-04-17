@@ -4,22 +4,6 @@
 @section('content')
 <div class="flex items-center mb-3">
     <h1 class="flex-1">Resources</h1>
-
-    @if($trelloUrl)
-        <a href="{{ $trelloUrl }}" target="_blank" class="btn flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" class="pr-2 h-4">
-                <defs>
-                    <clipPath id="a">
-                        <path
-                            d="M22.216 0a2.997 2.997 0 0 1 2.992 2.993v19.19a2.997 2.997 0 0 1-2.992 3.009H2.996A2.997 2.997 0 0 1 0 22.183V2.993A2.997 2.997 0 0 1 2.997 0ZM9.862 4.648h-4.2a.998.998 0 0 0-.993.998v12.499c0 .55.444.995.993.997h4.2a1.002 1.002 0 0 0 1.01-.997l-.013-12.5a1.002 1.002 0 0 0-.997-.997Zm9.692 0h-4.2c-.55.002-.995.448-.997.998v6.76c.002.55.447.995.997.998h4.2a.998.998 0 0 0 1.01-.998l-.016-6.76a.998.998 0 0 0-.994-.998Z"
-                        />
-                    </clipPath>
-                </defs>
-                <g clip-path="url(#a)"><path d="M0 0h25.208v25.192H0V0z" /></g>
-            </svg>
-            Trello
-        </a>
-    @endif
 </div>
 
 @if(count($looms) > 0)
