@@ -7,8 +7,6 @@ return [
         'title' => 'Resources',
     ],
 
-    'trello_url' => '',
-
     /**
      * Configure Loom videos to be displayed on the dashboard.
      *
