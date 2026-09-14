@@ -1,5 +1,8 @@
 {
     "name": "thoughtco/statamic-cpresources",
+    "require": {
+        "statamic/cms": "^6.0"
+    },
     "autoload": {
         "psr-4": {
             "Thoughtco\\StatamicCpresources\\": "src"
