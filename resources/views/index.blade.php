@@ -33,7 +33,7 @@
     <div class="card p-0 mb-4">
         <header class="flex justify-between items-center p-2 border-b">
             <h2 class="flex items-center">
-                <div class="h-6 w-6 mr-1 text-grey-80">
+                <div class="h-6 w-6 mr-1 text-gray-700 dark:text-gray-300">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13" />
                     </svg>
@@ -46,13 +46,13 @@
             <div class="grid grid-cols-2 gap-4 py-2">
                 <ul class="list-disc pl-2">
                     @foreach($additionalResources as $additionalResource)
-                        <li><a class="text-blue hover:text-blue-dark" href="{{ $additionalResource['url'] }}">{{ $additionalResource['name'] }}</a></li>
+                        <li><a class="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300" href="{{ $additionalResource['url'] }}">{{ $additionalResource['name'] }}</a></li>
                     @endforeach
                 </ul>
             </div>
         </section>
     </div>
-    @endif
+@endif
 @endsection
 
 @push('head')
